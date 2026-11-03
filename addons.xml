@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.wandall" name="Wandall" version="1.3.5" provider-name="WandallDev">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Wandall Live TV</summary>
+        <description lang="en">Xtream Codes and M3U player with live TV, movies, shows, high-accuracy multi-token search, watch history, recommendations, themes, SOCKS5/HTTP proxy piping, verified IP privacy tools, and smooth navigation</description>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
 <addon id="repository.wandall" name="Wandall Repository" version="1.0.0" provider-name="WandallDev">
     <extension point="xbmc.addon.repository" name="Wandall Repository">
         <dir>
@@ -14,23 +31,6 @@
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
-        </assets>
-    </extension>
-</addon>
-<addon id="plugin.video.wandall" name="Wandall" version="1.3.4" provider-name="WandallDev">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Wandall Live TV</summary>
-        <description lang="en">Xtream Codes and M3U player with live TV, movies, shows, high-accuracy multi-token search, watch history, recommendations, themes, SOCKS5/HTTP proxy piping, verified IP privacy tools, and smooth navigation</description>
-        <platform>all</platform>
-        <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
